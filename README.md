@@ -1,15 +1,20 @@
-# SCA-Cloud-School-Application
-She Code Africa Cloud School Application
+# SCA Cloud School Application
 
-Excericise 1:
+### Deployment instruction
+======================
 
-* Test process
-==============
-- Installed docker
-- Created app/index.html, Dockerfile
-- Built a custom nginx image using the following command
-    docker build -t webserver
-- Run the webserver in a container 
-    docker run -dp 8000:80 --name web webserver
-- Checked the webiste output by going to the browser:  localhost:8000 
-- Output: Welcome to SCA Cloud School Application
+**Prerequisite**: make sure you have installed docker
+1. Pull the image from dockerhub repository
+
+    URL: https://hub.docker.com/r/bezu/sca-cloud
+    
+    <code>docker pull bezu/sca-cloud</code>
+2. Run it in a container
+
+   <code>docker run -dp 8000:80 bezu/sca-cloud </code>
+3. To check the output, go to:<code> localhost:8000 </code>, and you shoud see the text: 
+
+    Welcome to SCA Cloud School Application , this is my first assessment
+
+    OR
+- You can skip step 1 and go directly to step 2: the run command, and docker will pull the image from docker hub and run a container.
