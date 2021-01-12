@@ -7,6 +7,7 @@
 1. Pull the image from dockerhub repository
 
     URL: https://hub.docker.com/r/bezu/sca-cloud
+    
     <code>docker pull bezu/sca-cloud</code>
 2. Run it in a container
 
